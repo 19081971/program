@@ -236,17 +236,19 @@ for key,value in a.items():
 #Program to find the length of a list using recursion
 #23-2-24
 
-def list_length(l):
-  if not l:
+def list_length(L1):
+  if not L1:
     return 0
 
   else:
-    return 1+ list_length(l[1:])
+    return 1+ list_length(L1[1:])
 
 
-l=[1,2,3,4,5,6,'a']
+L1=[1,2,3,4,5,6,'a']
+L2=list_length(L1)
+print(L2)
 
-list_length(l)
+list_length(L1)
 
 
 ***********************************************************************************************************************
